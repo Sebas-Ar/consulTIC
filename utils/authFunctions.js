@@ -36,7 +36,7 @@ export const signIn = async (e, loginData, router) => {
 		const { email, password } = loginData
 		const user = await Auth.signIn(email, password);
 		if (user?.attributes?.sub && user?.username && user?.signInUserSession) {
-			alert('usuario confirmado')
+			alert('usuario confirmadoo')
 		}
 	} catch (error) {
 		console.log('error signing in', error.message);
