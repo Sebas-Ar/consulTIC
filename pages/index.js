@@ -2,12 +2,13 @@ import Head from 'next/head'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router'
-import amplify from 'aws-amplify'
+import Amplify from "@aws-amplify/core";
+import Auth from "@aws-amplify/auth";
 
 import { amplifyConfigAdmin, authConfigAdmin } from '../cognito/consultorioPool'
 
-amplify.configure(amplifyConfigAdmin)
-amplify.Auth.configure(authConfigAdmin)
+Amplify.configure(amplifyConfigAdmin)
+Auth.configure(authConfigAdmin)
 
 import { signIn, signUp } from '../utils/authFunctions'
 
