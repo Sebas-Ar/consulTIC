@@ -13,7 +13,7 @@ const Logo = () => {
             }
 
             img {
-                height: 15rem;
+                height: 10rem;
                 cursor: pointer;
             }
         `}</style>
