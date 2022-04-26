@@ -33,9 +33,11 @@ const Login = ({ title, route }) => {
         <button>Login</button>
 
         <nav>
-            <a>
-                <Link href={`/${route}/validar-codigo`}>No has validad tu usuario?</Link>
-            </a>
+            <Link href={`/${route}/validar-codigo`}>
+                <a>
+                    No has validad tu usuario?
+                </a>
+            </Link>
         </nav>
 
         <style jsx>{`

@@ -2,11 +2,11 @@ import Link from 'next/link'
 
 const Logo = () => {
     return <div className="logo">
-        <a>
-            <Link href="/">
+        <Link href="/">
+            <a>
                 <img src="/img/logo/logo.png" alt="" />
-            </Link>
-        </a>
+            </a>
+        </Link>
 
         <style jsx>{`
             .logo {

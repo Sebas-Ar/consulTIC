@@ -13,29 +13,29 @@ const Index = () => {
 
         <ul>
             <li>
-                <a>
-                    <Link href='admin'>Go to Admin</Link>
-                </a>
+                <Link href='admin'>
+                    <a>Go to Admin</a>
+                </Link>
             </li>
             <li>
-                <a>
-                    <Link href='comite'>Go to Comite</Link>
-                </a>
+                <Link href='comite'>
+                    <a>Go to Comite</a>
+                </Link>
             </li>
             <li>
-                <a>
-                    <Link href='consultor-junior'>Go to Consultor Junior</Link>
-                </a>
+                <Link href='consultor-junior'>
+                    <a>Go to Consultor Junior</a>
+                </Link>
             </li>
             <li>
-                <a>
-                    <Link href='consultor-senior'>Go to Consultor Senior</Link>
-                </a>
+                <Link href='consultor-senior'>
+                    <a>Go to Consultor Senior</a>
+                </Link>
             </li>
             <li>
-                <a>
-                    <Link href='usuario-externo'>Go to Usuario Externo</Link>
-                </a>
+                <Link href='usuario-externo'>
+                    <a>Go to Usuario Externo</a>
+                </Link>
             </li>
         </ul>
 

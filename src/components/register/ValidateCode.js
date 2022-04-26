@@ -28,9 +28,11 @@ const ValidateCode = ({ route }) => {
         <button>Validar</button>
 
         <nav>
-            <a>
-                <Link href={`/${route}/iniciar-sesion`}>volver a login</Link>
-            </a>
+            <Link href={`/${route}/iniciar-sesion`}>
+                <a>
+                    volver a login
+                </a>
+            </Link>
         </nav>
 
         <style jsx>{`
