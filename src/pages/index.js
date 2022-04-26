@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
 const Index = () => {
     return <div className="container">
 
@@ -8,6 +10,34 @@ const Index = () => {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <h1>ConsulTIC</h1>
+
+        <ul>
+            <li>
+                <a>
+                    <Link href='admin'>Go to Admin</Link>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <Link href='comite'>Go to Comite</Link>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <Link href='consultor-junior'>Go to Consultor Junior</Link>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <Link href='consultor-senior'>Go to Consultor Senior</Link>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <Link href='usuario-externo'>Go to Usuario Externo</Link>
+                </a>
+            </li>
+        </ul>
 
         <style jsx>{`
 

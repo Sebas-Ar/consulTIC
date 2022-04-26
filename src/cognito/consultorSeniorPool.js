@@ -1,17 +1,17 @@
-export const NEXT_PUBLIC_ADMIN_USER_POOL_ID = process.env.NEXT_PUBLIC_ADMIN_USER_POOL_ID
-export const NEXT_PUBLIC_ADMIN_CLIENT_ID = process.env.NEXT_PUBLIC_ADMIN_CLIENT_ID
+export const NEXT_PUBLIC_CONSULTOR_SENIOR_USER_POOL_ID = process.env.NEXT_PUBLIC_CONSULTOR_SENIOR_USER_POOL_ID
+export const NEXT_PUBLIC_CONSULTOR_SENIOR_CLIENT_ID = process.env.NEXT_PUBLIC_CONSULTOR_SENIOR_CLIENT_ID
 const AWS_REGION = process.env.AWS_REGION
 
-export const amplifyConfigAdmin = {
+export const amplifyConfigConsultorSenior = {
 
     Auth: {
         region: AWS_REGION,
-        userPoolId: NEXT_PUBLIC_ADMIN_USER_POOL_ID,
-        userPoolWebClientId: NEXT_PUBLIC_ADMIN_CLIENT_ID
+        userPoolId: NEXT_PUBLIC_CONSULTOR_SENIOR_USER_POOL_ID,
+        userPoolWebClientId: NEXT_PUBLIC_CONSULTOR_SENIOR_CLIENT_ID
     }
 }
 
-export const authConfigAdmin = {
+export const authConfigConsultorSenior = {
     oauth: {
         domain: 'https://admin-consultic.auth.us-east-1.amazoncognito.com',
         scope: ['email', 'openid'],

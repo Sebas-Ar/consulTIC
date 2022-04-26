@@ -3,11 +3,22 @@ import { Auth } from 'aws-amplify'
 import { CognitoUserAttribute, CognitoUserPool } from 'amazon-cognito-identity-js'
 
 export const authSignIn = async ({ email, password }) => {
+    console.log(email, password)
     try {
         const user = await Auth.signIn(email, password)
         return { user }
     } catch (error) {
         console.log('error iniciando sesión', error)
+        return { error }
+    }
+}
+
+export const confirmSignUp = async ({ email, code }) => {
+    try {
+        const succes = await Auth.confirmSignUp(email, code)
+        return succes
+    } catch (error) {
+        console.log('error consifrmado el codigo', error)
         return { error }
     }
 }
@@ -60,12 +71,9 @@ export const authSignOut = async () => {
 //     }
 // }
 
-export const signUpAdmin = (email, password) => {
+export const signUpAPI = (UserPoolId, ClientId, email, password) => {
     return new Promise((resolve, reject) => {
-        const poolData = {
-            UserPoolId: 'us-east-1_7Wj9KvlHz',
-            ClientId: '5bqmjheg6i5e3mo90fp542i8gc'
-        }
+        const poolData = { UserPoolId, ClientId }
 
         const cognitoAttributeList = []
 
