@@ -19,5 +19,26 @@
                 }
             }
         }
+    },
+    "consultic": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-consultic-consultic-32614-authRole",
+            "UnauthRoleArn": "arn:aws:iam::919636727639:role/amplify-consultic-consultic-32614-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::919636727639:role/amplify-consultic-consultic-32614-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-consultic-consultic-32614-deployment",
+            "UnauthRoleName": "amplify-consultic-consultic-32614-unauthRole",
+            "StackName": "amplify-consultic-consultic-32614",
+            "StackId": "arn:aws:cloudformation:us-east-1:919636727639:stack/amplify-consultic-consultic-32614/604f48c0-c471-11ec-8840-0a22a8cbcebb",
+            "AmplifyAppId": "d3kecb3v9snazw"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3kecb3v9snazw",
+                    "type": "cicd"
+                }
+            }
+        }
     }
 }

@@ -25,7 +25,7 @@ const Index = () => {
 	const [numeros, setNumeros] = useState([])
 
 	useEffect(() => {
-		getData()
+		/* getData() */
 	}, []);
 
 	const readSignUpData = (e) => {
