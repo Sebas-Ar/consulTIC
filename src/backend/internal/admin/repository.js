@@ -6,16 +6,15 @@ const adminRepository = {}
 
 adminRepository.storeAdminAtDynamo = async (admin = {}) => {
     try {
-        
-        const {id, email, phone} = admin
-        
+        const { id, email, phone } = admin
+
         await dynamoDB.putItem({
             TableName: 'consultic',
             Item: {
                 type: { S: 'admin' },
                 id: { S: id },
                 email: { S: email },
-                phone: { S: phone },
+                phone: { S: phone }
             }
         }).promise()
 

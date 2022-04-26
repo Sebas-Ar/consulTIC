@@ -1,4 +1,4 @@
-export const responseOk = ( res, status, message ) => {
+export const responseOk = (res, status, message) => {
     try {
         res.status(status).json({
             message
@@ -9,15 +9,14 @@ export const responseOk = ( res, status, message ) => {
     }
 }
 
-export const responseError = (res = {}, error = {status: 400, err: 'error message'}) => {
+export const responseError = (res = {}, error = { status: 400, err: 'error message' }) => {
     try {
-        const {status, message, err} = error
-        res.status(status). json({
+        const { status, message, err } = error
+        res.status(status).json({
             message,
             err
         })
     } catch (error) {
         throw new Error(`${error.message} At responseError() in backend/pkg/web/response.js`)
     }
-
 }

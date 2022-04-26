@@ -61,7 +61,7 @@ export const authSignOut = async () => {
 // }
 
 export const signUpAdmin = (email, password) => {
-    return new Promise( (resolve, reject) => {
+    return new Promise((resolve, reject) => {
         const poolData = {
             UserPoolId: 'us-east-1_7Wj9KvlHz',
             ClientId: '5bqmjheg6i5e3mo90fp542i8gc'
@@ -77,9 +77,9 @@ export const signUpAdmin = (email, password) => {
         })
 
         const userPool = new CognitoUserPool(poolData)
-        
+
         userPool.signUp(email, password, cognitoAttributeList, null, (err, result) => {
-            if (err) { 
+            if (err) {
                 reject(err)
             } else {
                 resolve(result.userSub)

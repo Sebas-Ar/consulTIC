@@ -5,15 +5,14 @@ const adminService = {}
 
 adminService.saveAdmin = async (adminValidated) => {
     try {
-        const {email, password, phone} = adminValidated
+        const { email, password, phone } = adminValidated
 
-        
         const sub = await signUpAdmin(email, password)
-        
+
         const admin = {
             id: sub,
             email,
-            phone,
+            phone
         }
 
         const errorRepo = await adminRepository.storeAdminAtDynamo(admin)
